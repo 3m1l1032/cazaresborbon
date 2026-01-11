@@ -1,35 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emilio Cazares Borbon | Computer Science</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="updates.html">Updates</a></li>
-                <li><a href="programs.html">Programs</a></li>
-                <li><a href="side-projects.html">Side Projects</a></li>
-                <li><a href="resume.html">Resume/Contact/Donations</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h1>Welcome to My Personal Website</h1>
-        <p>This is the hub for all my works and projects.</p>
-    </main>
-    <footer>
-        <div class="social-icons">
-            <a href="https://github.com/3m1l1032" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://linkedin.com/in/emilio-cazares-borbon" target="_blank"><i class="fab fa-linkedin"></i></a>
+  <!-- Navigation -->
+  <header class="header">
+    <div class="header-container">
+      <!-- <CHANGE> Full name instead of initials -->
+      <a href="index.html" class="logo">Emilio Cazares Borbon</a>
+      <nav class="nav">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <!-- <CHANGE> Simplified hero with photo, no buttons/links -->
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-intro">
+          <img src="/placeholder.svg?height=180&width=180" alt="Emilio Cazares Borbon" class="hero-photo">
+          <div class="hero-text">
+            <h1 class="hero-name">Emilio Cazares Borbon</h1>
+            <p class="hero-title">Computer Science & Neurobiology</p>
+            <p class="hero-tagline">Building software at the intersection of technology and neuroscience.</p>
+          </div>
         </div>
-        <p>&copy; 2025 My Personal Website</p>
-    </footer>
-    <script src="js/main.js"></script>
+      </div>
+    </section>
+
+    <!-- <CHANGE> Expanded About Section -->
+    <section class="section" id="about">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            I'm a bilingual (English/Spanish) undergraduate student at Georgetown University pursuing 
+            a double major in Computer Science and Neurobiology, graduating in May 2025. My academic 
+            journey has been driven by a fascination with how technology can advance our understanding 
+            of the human brain.
+          </p>
+          <p>
+            At the <a href="https://neurology.georgetown.edu/" class="text-link">DARN Lab</a> (Disorders 
+            of Attention and Recovery in Neurology), I work on developing diagnostic web-based tasks 
+            for aphasia research and immersive VR applications for EEG experiments. This work sits at 
+            the perfect intersection of my two majors — using computational tools to study neurological 
+            conditions and brain function.
+          </p>
+          <p>
+            My research focuses on creating tools that require millisecond-precision timing for 
+            synchronization with EEG equipment, which presents unique challenges in web development. 
+            I've also been exploring how virtual reality can create controlled, immersive environments 
+            for neuroscience experiments, particularly using Meta Quest headsets.
+          </p>
+          <p>
+            Beyond research, I'm passionate about teaching and mentorship. As a Teaching Assistant for 
+            Georgetown's CS department, I've had the opportunity to guide over 150 students through 
+            programming courses in C++, Java, Python, and R. There's something deeply rewarding about 
+            watching concepts "click" for students who were previously struggling.
+          </p>
+          <p>
+            When I'm not coding or studying, I enjoy exploring the latest developments in neurotechnology, 
+            diving into new programming languages and frameworks, and thinking about how emerging 
+            technologies like brain-computer interfaces might shape our future.
+          </p>
+        </div>
+        
+        <div class="about-sidebar">
+          <div class="about-skills">
+            <h3 class="skills-title">Technical Skills</h3>
+            <div class="skills-grid">
+              <div class="skill-category">
+                <h4>Languages</h4>
+                <p>Python, C++, Java, JavaScript, C#, R, SQL</p>
+              </div>
+              <div class="skill-category">
+                <h4>Frameworks & Tools</h4>
+                <p>Unity, React, Node.js, Qualtrics, Git, VS Code</p>
+              </div>
+              <div class="skill-category">
+                <h4>Specialized</h4>
+                <p>Meta Quest SDK, EEG Systems, VR/AR Development</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="about-contact">
+            <h3 class="skills-title">Contact</h3>
+            <div class="contact-links">
+              <a href="mailto:ec1272@georgetown.edu" class="contact-link">
+                <span class="contact-icon">✉</span>
+                ec1272@georgetown.edu
+              </a>
+              <a href="https://github.com/3m1l1032" class="contact-link">
+                <span class="contact-icon">⌘</span>
+                github.com/3m1l1032
+              </a>
+              <a href="https://linkedin.com/in/emilio-cazares-borbon" class="contact-link">
+                <span class="contact-icon">in</span>
+                LinkedIn
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section (unchanged) -->
+    <section class="section" id="experience">
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2024 — Present</span>
+            <h3 class="timeline-title">Research Assistant</h3>
+            <p class="timeline-company">DARN Lab, Georgetown University</p>
+            <p class="timeline-description">
+              Developing diagnostic web tasks for aphasia research and VR/AR applications 
+              for EEG experiments using Unity and JavaScript.
+            </p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2023 — Present</span>
+            <h3 class="timeline-title">Teaching Assistant</h3>
+            <p class="timeline-company">Georgetown University CS Department</p>
+            <p class="timeline-description">
+              Providing programming guidance in C++, Java, Python, and R to 75+ students per semester.
+            </p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2023 — 2024</span>
+            <h3 class="timeline-title">Course Assistant</h3>
+            <p class="timeline-company">Georgetown Summer Programs</p>
+            <p class="timeline-description">
+              Teaching Python and cybersecurity fundamentals to high school students.
+            </p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2021 — 2022</span>
+            <h3 class="timeline-title">Accounting Intern</h3>
+            <p class="timeline-company">Raytheon</p>
+            <p class="timeline-description">
+              Managed financial datasets and developed Excel workflows for government accounting compliance.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- <CHANGE> Removed Featured Projects section entirely -->
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-links">
+        <a href="https://github.com/3m1l1032" class="footer-link">GitHub</a>
+        <a href="https://linkedin.com/in/emilio-cazares-borbon" class="footer-link">LinkedIn</a>
+        <a href="mailto:ec1272@georgetown.edu" class="footer-link">Email</a>
+      </div>
+      <p class="footer-copy">© 2025 Emilio Cazares Borbon. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
