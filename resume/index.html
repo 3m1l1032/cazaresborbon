@@ -3,54 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog — Emilio Cazares Borbon</title>
+  <title>Resume - Emilio Cazares Borbon</title>
   <link rel="icon" type="image/png" href="../images/ECB_logo.png">
   <link rel="apple-touch-icon" href="../images/ECB_logo.png">
   <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-  <!-- Navigation -->
   <header class="header">
     <div class="header-container">
-      <!-- <CHANGE> Full name instead of initials -->
       <a href="../" class="logo">Emilio Cazares Borbon</a>
       <nav class="nav">
         <a href="../" class="nav-link">Home</a>
         <a href="../projects/" class="nav-link">Projects</a>
-        <a href="./" class="nav-link active">Blog</a>
-        <a href="../resume/" class="nav-link">Resume</a>
+        <a href="../blog/" class="nav-link">Blog</a>
+        <a href="./" class="nav-link active">Resume</a>
       </nav>
     </div>
   </header>
 
   <main class="main">
-    <!-- Page Header -->
     <section class="page-header">
-      <h1 class="page-title">Blog</h1>
+      <h1 class="page-title">Resume</h1>
       <p class="page-description">
-        Thoughts on neurotechnology, programming, research, and everything in between.
+        View my latest resume in-browser or download a copy.
       </p>
     </section>
 
-    <!-- Blog Posts -->
     <section class="section">
-      <div class="blog-list">
-        <article class="blog-post">
-          <h2 class="blog-post-title">No articles published yet</h2>
-          <p class="blog-post-excerpt">
-            I am still writing my first posts. Check back soon for articles on neurotechnology,
-            programming, and research (or anything else on my mind).
-          </p>
-          <p>
-            Stay tuned for my first post on the overuse of the automated accessibility doors on Georgetown's campus!
-          </p>
-        </article>
+      <div class="resume-toolbar">
+        <a href="../files/cazaresborbon_emilio_resume.pdf" class="btn btn-primary" download>Download PDF</a>
+        <a href="../files/cazaresborbon_emilio_resume.pdf" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Open in New Tab</a>
       </div>
-    </section>
 
+      <div class="resume-viewer-wrapper">
+        <iframe
+          class="resume-viewer"
+          src="../files/cazaresborbon_emilio_resume.pdf"
+          title="Emilio Cazares Borbon Resume"
+          loading="lazy">
+        </iframe>
+      </div>
+
+      <p class="resume-fallback">
+        If the viewer does not load on your browser, use
+        <a href="../files/cazaresborbon_emilio_resume.pdf" class="text-link" target="_blank" rel="noopener noreferrer">this direct link</a>.
+      </p>
+    </section>
   </main>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="footer-container">
       <div class="footer-links">
