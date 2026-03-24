@@ -11,9 +11,13 @@ Personal website built with static HTML and CSS.
 ├── index.html               # Home / About / Experience
 ├── styles.css               # Shared styles used by all pages
 ├── images/                  # Site images and media
+├── projects/
+│   └── index.html           # Projects page (/projects/)
+├── blog/
+│   └── index.html           # Blog listing page (/blog/)
 ├── pages/
-│   ├── projects.html        # Projects page
-│   └── blog.html            # Blog listing page
+│   ├── projects.html        # Legacy page path (optional)
+│   └── blog.html            # Legacy page path (optional)
 └── posts/
     └── post-template.html   # Template for future blog posts
 ```
@@ -29,7 +33,7 @@ Optional (recommended) local server from the repo root:
 python3 -m http.server 8000
 ```
 
-Then open `http://localhost:8000/index.html`.
+Then open `http://localhost:8000/`.
 
 ## Content Updates
 
@@ -38,11 +42,11 @@ Then open `http://localhost:8000/index.html`.
 1. Duplicate [posts/post-template.html](posts/post-template.html).
 2. Rename it with a slug, for example: `posts/my-first-post.html`.
 3. Update title, metadata, content, and footer tags in the new post file.
-4. Add an entry in [pages/blog.html](pages/blog.html) so the post appears in the listing.
+4. Add an entry in [blog/index.html](blog/index.html) so the post appears in the listing.
 
 ### Add or Edit Projects
 
-1. Open [pages/projects.html](pages/projects.html).
+1. Open [projects/index.html](projects/index.html).
 2. Copy an existing `<article class="project-full">` block.
 3. Update the project `id`, title, description, tags, and external links.
 
