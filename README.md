@@ -1,71 +1,67 @@
 # Emilio Cazares Borbon - Personal Portfolio
 
-A clean, minimal personal portfolio website built with HTML and CSS.
+Personal website built with static HTML and CSS.
 
-## File Structure
+## Project Structure
 
-\`\`\`
+```text
 /
-├── index.html          # Home page (about, experience)
-├── projects.html       # Projects showcase
-├── blog.html           # Blog listing page
-├── styles.css          # All styles
-├── posts/              # Blog post files
-│   └── post-template.html  # Template for new posts
-└── README.md           # This file
-\`\`\`
+├── CNAME                    # Custom domain for GitHub Pages
+├── README.md                # Project documentation
+├── styles.css               # Shared styles used by all pages
+├── images/                  # Site images and media
+├── pages/
+│   ├── index.html           # Home / About / Experience
+│   ├── projects.html        # Projects page
+│   └── blog.html            # Blog listing page
+└── posts/
+    └── post-template.html   # Template for future blog posts
+```
 
----
+## Local Preview
 
-## How to Add Content
+1. Open [pages/index.html](pages/index.html) in your browser.
+2. Navigate through the site using the top navigation.
 
-### Adding a New Blog Post
+Optional (recommended) local server from the repo root:
 
-1. **Copy the template:**
-   - Duplicate `posts/post-template.html`
-   - Rename it to your post's slug (e.g., `posts/my-new-post.html`)
+```bash
+python3 -m http.server 8000
+```
 
-2. **Edit the post file:**
-   - Update the `<title>` tag
-   - Change the date and category in `.post-meta`
-   - Write your title in `.post-title`
-   - Add your content in `.post-content`
-   - Update tags in `.post-footer`
+Then open `http://localhost:8000/pages/index.html`.
 
-3. **Add to blog listing:**
-   - Open `blog.html`
-   - Copy an existing `<article class="blog-post">` block
-   - Update the date, category, title, excerpt, and links
-   - Place newer posts at the top
+## Content Updates
 
-### Adding a New Project
+### Add a New Blog Post
 
-1. Open `projects.html`
-2. Copy an existing `<article class="project-full">` block
-3. Update:
-   - The `id` attribute for linking
-   - The gradient colors in `style="background: ..."`
-   - The icon emoji
-   - Title, description, and tags
-   - GitHub link
+1. Duplicate [posts/post-template.html](posts/post-template.html).
+2. Rename it with a slug, for example: `posts/my-first-post.html`.
+3. Update title, metadata, content, and footer tags in the new post file.
+4. Add an entry in [pages/blog.html](pages/blog.html) so the post appears in the listing.
 
-**Gradient color suggestions:**
-- Blue/Purple: `linear-gradient(135deg, #3b82f6, #8b5cf6)`
-- Green/Cyan: `linear-gradient(135deg, #10b981, #06b6d4)`
-- Orange/Red: `linear-gradient(135deg, #f59e0b, #ef4444)`
-- Pink/Purple: `linear-gradient(135deg, #ec4899, #8b5cf6)`
+### Add or Edit Projects
 
-### Adding Experience
+1. Open [pages/projects.html](pages/projects.html).
+2. Copy an existing `<article class="project-full">` block.
+3. Update the project `id`, title, description, tags, and external links.
 
-1. Open `index.html`
-2. Find the `<div class="timeline">` section
-3. Copy an existing `<article class="timeline-item">` block
-4. Update the date, title, company, and description
-5. Place in chronological order (newest first)
+### Add or Edit Experience
 
-### Updating Your Photo
+1. Open [pages/index.html](pages/index.html).
+2. Find the `<div class="timeline">` section.
+3. Copy an existing `<article class="timeline-item">` block.
+4. Update date, role, organization, and description.
+5. Keep entries in reverse-chronological order.
 
-Replace the `src` attribute in the `.hero-photo` `<img>` tag with your actual photo path:
+### Update Profile Photo
 
-```html
-<img src="images/your-photo.jpg" alt="Emilio Cazares Borbon" class="hero-photo">
+1. Open [pages/index.html](pages/index.html).
+2. Find the `<img class="hero-photo">` element.
+3. Update the `src` path to your new image in [images](images).
+
+## Deployment Notes
+
+- The [CNAME](CNAME) file is used for the custom GitHub Pages domain.
+- Keep relative paths consistent:
+  - From files in [pages](pages), use `../styles.css` and `../images/...`.
