@@ -25,125 +25,356 @@
     <section class="page-header">
       <h1 class="page-title">Projects</h1>
       <p class="page-description">
-        A collection of research tools, applications, and experiments I've built 
-        at the intersection of computer science and neuroscience.
+        Research systems, hackathon builds, and course projects spanning neuroscience,
+        machine learning, and software engineering.
       </p>
     </section>
 
     <!-- Projects Grid -->
     <section class="section">
       <div class="projects-grid">
-        <!-- Aphasia Task Suite -->
-        <article class="project-full" id="aphasia">
-          <div class="project-full-image" style="background: linear-gradient(135deg, #3b82f6, #8b5cf6);">
-            <span class="project-icon">🧠</span>
-          </div>
-          <div class="project-full-content">
-            <div class="project-full-header">
-              <h2 class="project-full-title">Aphasia Task Suite</h2>
-              <a href="https://github.com/3m1l1032" class="project-link-btn">View on GitHub →</a>
-            </div>
-            <p class="project-full-description">
-              A comprehensive suite of 32 web-based diagnostic tasks designed for aphasia research. 
-              Each task is deployed via Qualtrics and features millisecond-precision timing for 
-              synchronization with EEG recording equipment.
-            </p>
-            <p class="project-full-description">
-              The tasks assess various language functions including comprehension, production, 
-              repetition, and naming — providing researchers with granular data on language 
-              processing in patients with aphasia.
-            </p>
-            <div class="project-tags">
-              <span class="tag">JavaScript</span>
-              <span class="tag">HTML/CSS</span>
-              <span class="tag">Qualtrics</span>
-              <span class="tag">Research</span>
-            </div>
-          </div>
-        </article>
+        <div class="projects-category">
+          <h2 class="projects-category-title">Research</h2>
 
-        <!-- EEG VR Engine -->
-        <article class="project-full" id="vr">
-          <div class="project-full-image" style="background: linear-gradient(135deg, #10b981, #06b6d4);">
-            <span class="project-icon">🥽</span>
-          </div>
-          <div class="project-full-content">
-            <div class="project-full-header">
-              <h2 class="project-full-title">EEG VR Stimuli Engine</h2>
-              <a href="https://github.com/3m1l1032" class="project-link-btn">View on GitHub →</a>
+          <article class="project-full" id="aphasia">
+            <div class="project-full-image project-visual project-visual-aphasia">
+              <span class="project-visual-label">Aphasia Research</span>
             </div>
-            <p class="project-full-description">
-              VR applications for EEG data collection built for Oculus Quest 2. The engine 
-              provides precise audiovisual synchronization critical for neuroscience experiments 
-              that correlate brain activity with sensory stimuli.
-            </p>
-            <p class="project-full-description">
-              Features include customizable experiment protocols, real-time stimulus presentation, 
-              and integration with external EEG recording systems via network triggers.
-            </p>
-            <div class="project-tags">
-              <span class="tag">C#</span>
-              <span class="tag">Unity</span>
-              <span class="tag">Meta Quest SDK</span>
-              <span class="tag">VR/AR</span>
+            <div class="project-full-content">
+              <div class="project-full-header">
+                <h3 class="project-full-title">Aphasia Task Suite</h3>
+                <div class="project-link-group">
+                  <a href="https://crlabgeorgetown.github.io/behavioral/" class="project-link-btn" target="_blank" rel="noopener noreferrer">View Project →</a>
+                  <a href="https://github.com/crlabgeorgetown/behavioral" class="project-link-btn" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
+                </div>
+              </div>
+              <p class="project-full-description">
+                32 web-based diagnostic tasks for aphasia research, each deployed via Qualtrics
+                with millisecond-precision timing for EEG synchronization.
+              </p>
+              <p class="project-full-description">
+                The tasks cover comprehension, production, repetition, and naming, giving
+                researchers granular data on how language breaks down and recovers. Built and
+                maintained as part of my work at the DARN Lab.
+              </p>
+              <div class="project-tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">HTML/CSS</span>
+                <span class="tag">Qualtrics</span>
+              </div>
             </div>
-          </div>
-        </article>
+          </article>
 
-        <!-- Autograder -->
-        <article class="project-full" id="autograder">
-          <div class="project-full-image" style="background: linear-gradient(135deg, #f59e0b, #ef4444);">
-            <span class="project-icon">📝</span>
-          </div>
-          <div class="project-full-content">
-            <div class="project-full-header">
-              <h2 class="project-full-title">Autograder</h2>
-              <a href="https://github.com/3m1l1032" class="project-link-btn">View on GitHub →</a>
+          <article class="project-full" id="public-html-tasks">
+            <div class="project-full-image project-visual project-visual-public-tasks">
+              <span class="project-visual-label">Public Research Tools</span>
             </div>
-            <p class="project-full-description">
-              An automated unit testing system for C++ programming assignments. The autograder 
-              runs student submissions against a comprehensive test suite, providing detailed 
-              feedback and grades to hundreds of students each semester.
-            </p>
-            <p class="project-full-description">
-              Built to streamline the grading workflow for Georgetown's CS department, 
-              ensuring consistent and fair evaluation across all submissions.
-            </p>
-            <div class="project-tags">
-              <span class="tag">C++</span>
-              <span class="tag">Bash</span>
-              <span class="tag">Python</span>
-              <span class="tag">Education</span>
+            <div class="project-full-content">
+              <div class="project-full-header">
+                <h3 class="project-full-title">Public HTML Task Suite</h3>
+                <div class="project-link-group">
+                  <a href="https://crlabgeorgetown.github.io/behavioral/task/public/html/publicTaskHub.html" class="project-link-btn" target="_blank" rel="noopener noreferrer">View Project →</a>
+                  <a href="https://github.com/crlabgeorgetown/behavioral/tree/main/task/public" class="project-link-btn" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
+                </div>
+              </div>
+              <p class="project-full-description">
+                As part of Alycia Laks, MS, CCC-SLP's research paper, I helped create a public
+                version of the task suite available as standalone HTML versions.
+              </p>
+              <p class="project-full-description">
+                These versions don't collect data for our lab, but include on-the-spot data
+                analysis presented directly to the user, making the tasks accessible for
+                broader research and educational purposes.
+              </p>
+              <div class="project-tags">
+                <span class="tag">HTML/CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Research</span>
+              </div>
             </div>
-          </div>
-        </article>
+          </article>
 
-        <!-- Codon Reader -->
-        <article class="project-full" id="codon">
-          <div class="project-full-image" style="background: linear-gradient(135deg, #ec4899, #8b5cf6);">
-            <span class="project-icon">🧬</span>
-          </div>
-          <div class="project-full-content">
-            <div class="project-full-header">
-              <h2 class="project-full-title">Codon Reader</h2>
-              <a href="https://github.com/3m1l1032" class="project-link-btn">View on GitHub →</a>
+          <article class="project-full" id="codon">
+            <div class="project-full-image project-visual project-visual-codon">
+              <span class="project-visual-label">Lab Tooling</span>
             </div>
-            <p class="project-full-description">
-              A file-based analysis tool for DNA nucleotide and protein codon sequencing. 
-              The software reads genetic sequence files and provides detailed analysis 
-              of codon usage, amino acid translation, and sequence statistics.
-            </p>
-            <p class="project-full-description">
-              Designed for bioinformatics workflows, supporting common sequence file formats 
-              and providing exportable analysis reports.
-            </p>
-            <div class="project-tags">
-              <span class="tag">C++</span>
-              <span class="tag">Bioinformatics</span>
-              <span class="tag">File I/O</span>
+            <div class="project-full-content">
+              <div class="project-full-header">
+                <h3 class="project-full-title">Codon Reader</h3>
+              </div>
+              <p class="project-full-description">
+                A command-line tool that reads DNA sequence files and analyzes codon usage,
+                amino acid translation, and sequence statistics.
+              </p>
+              <p class="project-full-description">
+                Built as a side project during my work as a Georgetown Lab RA, this tool
+                evolved into a fairly complete bioinformatics resource.
+              </p>
+              <div class="project-tags">
+                <span class="tag">C++</span>
+                <span class="tag">Bioinformatics</span>
+                <span class="tag">CLI</span>
+              </div>
             </div>
-          </div>
-        </article>
+          </article>
+
+          <article class="project-full" id="vr">
+            <div class="project-full-image project-visual project-visual-vr">
+              <span class="project-visual-label">EEG + VR</span>
+            </div>
+            <div class="project-full-content">
+              <div class="project-full-header">
+                <h3 class="project-full-title">EEG VR Stimuli Engine</h3>
+              </div>
+              <p class="project-full-description">
+                VR environments for EEG data collection on Oculus Quest 2. The hard part was
+                getting audiovisual stimuli to fire precisely enough to be meaningful in a
+                neuroscience context, where timing tolerance is extremely small.
+              </p>
+              <p class="project-full-description">
+                Includes customizable experiment protocols and network-trigger integration with
+                external EEG systems.
+              </p>
+              <div class="project-tags">
+                <span class="tag">C#</span>
+                <span class="tag">Unity</span>
+                <span class="tag">Meta Quest SDK</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="projects-category">
+          <h2 class="projects-category-title">Personal</h2>
+
+          <article class="project-full" id="personal-website">
+            <div class="project-full-image project-visual project-visual-personal-site">
+              <span class="project-visual-label">Portfolio</span>
+            </div>
+            <div class="project-full-content">
+              <div class="project-full-header">
+                <h3 class="project-full-title">This Personal Website</h3>
+                <a href="https://github.com/3m1l1032/cazaresborbon" class="project-link-btn" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
+              </div>
+              <p class="project-full-description">
+                A minimal, hand-crafted portfolio site built from scratch without frameworks.
+                Designed for clarity and fast load times.
+              </p>
+              <p class="project-full-description">
+                The site focuses on showcasing work and writing with a clean, typographic
+                approach. No JavaScript frameworks or unnecessary dependencies.
+              </p>
+              <div class="project-tags">
+                <span class="tag">HTML/CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Static Site</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-full" id="autograder">
+            <div class="project-full-image project-visual project-visual-autograder">
+              <span class="project-visual-label">Automated Testing</span>
+            </div>
+            <div class="project-full-content">
+              <div class="project-full-header">
+                <h3 class="project-full-title">Autograder</h3>
+              </div>
+              <p class="project-full-description">
+                Automated unit testing for C++ assignments in Georgetown's CS department.
+                It runs student submissions against a comprehensive test suite and returns
+                detailed feedback.
+              </p>
+              <p class="project-full-description">
+                Built partly out of necessity. Manual grading at scale simply does not hold up.
+              </p>
+              <div class="project-tags">
+                <span class="tag">C++</span>
+                <span class="tag">Bash</span>
+                <span class="tag">Python</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-full" id="gem">
+            <div class="project-full-image project-visual project-visual-gem">
+              <span class="project-visual-label">HoyaHacks Build</span>
+            </div>
+            <div class="project-full-content">
+              <div class="project-full-header">
+                <h3 class="project-full-title">GEM - Study Material Generator</h3>
+                <a href="https://github.com/jnajera456/hoyaHacks-GEM" class="project-link-btn" target="_blank" rel="noopener noreferrer">HoyaHacks Project →</a>
+              </div>
+              <p class="project-full-description">
+                A study tool that takes uploaded notes and generates flashcards, quizzes, and
+                summaries using the Gemini API.
+              </p>
+              <p class="project-full-description">
+                I handled the backend: storage, user registry, and most of the code review and
+                merging across the team.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Gemini API</span>
+                <span class="tag">Hackathon</span>
+              </div>
+            </div>
+          </article>
+
+           <article class="project-full" id="user-input">
+             <div class="project-full-image project-visual project-visual-user-input">
+               <span class="project-visual-label">Testing Automation</span>
+             </div>
+             <div class="project-full-content">
+               <div class="project-full-header">
+                <h3 class="project-full-title">Automated Input File Tester</h3>
+               </div>
+               <p class="project-full-description">
+                 A tool that automates testing by simulating user input from files. It reads
+                 pre-defined input files and passes them to a target program, eliminating the
+                 need to manually type inputs for each test.
+               </p>
+               <p class="project-full-description">
+                 Built to streamline the testing and grading workflow. Includes a C++ program
+                 for file reading, Bash scripts for automation, and a flexible folder structure
+                 for different testing scenarios.
+               </p>
+               <div class="project-tags">
+                 <span class="tag">C++</span>
+                 <span class="tag">Bash</span>
+                 <span class="tag">Testing</span>
+               </div>
+             </div>
+           </article>
+        </div>
+
+        <div class="projects-category">
+          <h2 class="projects-category-title">Class Work</h2>
+
+          <article class="project-full" id="neural-network-processor">
+            <div class="project-full-image project-visual project-visual-neural-network">
+              <span class="project-visual-label">Data Mining</span>
+            </div>
+            <div class="project-full-content">
+              <div class="project-full-header">
+                <h3 class="project-full-title">Neural Network Experiment Runner</h3>
+              </div>
+              <p class="project-full-description">
+                Built for Georgetown COSC 3590 (Data Mining), this project runs neural-network
+                experiments over the Adult ARFF dataset through two pipelines: a custom C++
+                implementation and a Python scikit-learn MLP baseline.
+              </p>
+              <p class="project-full-description">
+                Both runners generate timestamped artifacts under results/ to enable direct
+                output comparison across experiment configurations.
+              </p>
+              <div class="project-tags">
+                <span class="tag">C++17</span>
+                <span class="tag">Python</span>
+                <span class="tag">scikit-learn</span>
+                <span class="tag">CMake</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-full" id="naive-bayes-processor">
+            <div class="project-full-image project-visual project-visual-naive-bayes">
+              <span class="project-visual-label">Data Mining</span>
+            </div>
+            <div class="project-full-content">
+              <div class="project-full-header">
+                <h3 class="project-full-title">Naive Bayes Experiment Runner</h3>
+              </div>
+              <p class="project-full-description">
+                A Naive Bayes processing pipeline for Adult ARFF data built for COSC 3590.
+                The project includes configurable discretization, fold-level outputs, and
+                evaluation summaries saved in timestamped results directories.
+              </p>
+              <p class="project-full-description">
+                It also includes an easy-mode workflow for quick execution and testing.
+              </p>
+              <div class="project-tags">
+                <span class="tag">C++17</span>
+                <span class="tag">CMake</span>
+                <span class="tag">Naive Bayes</span>
+                <span class="tag">ARFF</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-full" id="arff">
+            <div class="project-full-image project-visual project-visual-arff">
+              <span class="project-visual-label">Data Utilities</span>
+            </div>
+            <div class="project-full-content">
+              <div class="project-full-header">
+                <h3 class="project-full-title">ARFF Processing Toolkit</h3>
+              </div>
+              <p class="project-full-description">
+                A utility project for processing ARFF files (non-sparse ARFF), created to
+                support the neural-network_processor and naive-bayes_processor workflows.
+              </p>
+              <p class="project-full-description">
+                This parser/tooling layer helps standardize data loading and preprocessing
+                across both class projects.
+              </p>
+              <div class="project-tags">
+                <span class="tag">C++</span>
+                <span class="tag">ARFF Parsing</span>
+                <span class="tag">Data Processing</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-full" id="prompt-audio-maker">
+            <div class="project-full-image project-visual project-visual-audio">
+              <span class="project-visual-label">Deep Learning Audio</span>
+            </div>
+            <div class="project-full-content">
+              <div class="project-full-header">
+                <h3 class="project-full-title">Prompt Audio Maker</h3>
+              </div>
+              <p class="project-full-description">
+                A deep learning model for generating audio from text prompts, built as a final
+                project for my deep learning course.
+              </p>
+              <p class="project-full-description">
+                More of an experiment than a polished product, but the model produced
+                usable outputs and helped validate the full training and inference pipeline.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">PyTorch</span>
+                <span class="tag">Jupyter</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-full" id="georgetown-database">
+            <div class="project-full-image project-visual project-visual-database">
+              <span class="project-visual-label">Database Systems</span>
+            </div>
+            <div class="project-full-content">
+              <div class="project-full-header">
+                <h3 class="project-full-title">Georgetown Database</h3>
+              </div>
+              <p class="project-full-description">
+                A database-backed application with a front-end UI, similar to an Access-style
+                workflow but built from scratch.
+              </p>
+              <p class="project-full-description">
+                Final project for Georgetown's Intro to Databases course, built with Berk
+                Ugurdag. We designed the schema, built the MySQL backend, and wired up a
+                functional interface on top of it.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">Databases</span>
+              </div>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
   </main>
@@ -152,8 +383,8 @@
   <footer class="footer">
     <div class="footer-container">
       <div class="footer-links">
-        <a href="https://github.com/3m1l1032" class="footer-link">GitHub</a>
-        <a href="https://linkedin.com/in/emilio-cazares-borbon" class="footer-link">LinkedIn</a>
+        <a href="https://github.com/3m1l1032" class="footer-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://linkedin.com/in/emilio-cazares-borbon" class="footer-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         <a href="mailto:ec1272@georgetown.edu" class="footer-link">Email</a>
       </div>
       <!-- Updated copyright notice -->

@@ -25,6 +25,13 @@
 
 html {
   scroll-behavior: smooth;
+  scrollbar-gutter: stable;
+}
+
+@supports not (scrollbar-gutter: stable) {
+  html {
+    overflow-y: scroll;
+  }
 }
 
 body {
@@ -316,6 +323,10 @@ a {
   border-radius: 4px;
 }
 
+.contact-icon-email {
+  font-size: 1.5rem;
+}
+
 .skills-title {
   font-size: 1rem;
   font-weight: 600;
@@ -488,6 +499,21 @@ a {
   gap: 48px;
 }
 
+.projects-category {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.projects-category-title {
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
 .project-full {
   display: grid;
   gap: 24px;
@@ -508,8 +534,9 @@ a {
   height: 160px;
   border-radius: 12px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-end;
+  justify-content: flex-start;
+  overflow: hidden;
 }
 
 @media (min-width: 650px) {
@@ -519,8 +546,114 @@ a {
   }
 }
 
-.project-icon {
-  font-size: 3rem;
+.project-visual {
+  position: relative;
+  isolation: isolate;
+  padding: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background-size: cover;
+  background-position: center;
+}
+
+.project-visual::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.22), transparent 42%),
+    linear-gradient(180deg, rgba(28, 25, 23, 0.08), rgba(28, 25, 23, 0.58));
+  z-index: -1;
+}
+
+.project-visual-label {
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #f5f5f4;
+  background-color: rgba(28, 25, 23, 0.38);
+  border: 1px solid rgba(245, 245, 244, 0.25);
+  border-radius: 999px;
+  padding: 6px 12px;
+  backdrop-filter: blur(2px);
+}
+
+.project-visual-aphasia {
+  background-image:
+    linear-gradient(135deg, #0f766e, #0c4a6e),
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.07) 0, rgba(255, 255, 255, 0.07) 1px, transparent 1px, transparent 14px);
+}
+
+.project-visual-vr {
+  background-image:
+    linear-gradient(135deg, #14532d, #134e4a),
+    repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.06) 0, rgba(255, 255, 255, 0.06) 2px, transparent 2px, transparent 18px);
+}
+
+.project-visual-gem {
+  background-image:
+    linear-gradient(135deg, #312e81, #701a75),
+    radial-gradient(circle at 25% 30%, rgba(255, 255, 255, 0.2), transparent 28%);
+}
+
+.project-visual-neural-network {
+  background-image:
+    linear-gradient(135deg, #0b3b5b, #1d4ed8),
+    repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.08) 0, rgba(255, 255, 255, 0.08) 1px, transparent 1px, transparent 12px);
+}
+
+.project-visual-naive-bayes {
+  background-image:
+    linear-gradient(135deg, #14532d, #0f766e),
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.08) 0, rgba(255, 255, 255, 0.08) 1px, transparent 1px, transparent 10px);
+}
+
+.project-visual-arff {
+  background-image:
+    linear-gradient(135deg, #4c1d95, #7c3aed),
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.08) 0, rgba(255, 255, 255, 0.08) 1px, transparent 1px, transparent 11px);
+}
+
+.project-visual-audio {
+  background-image:
+    linear-gradient(135deg, #7f1d1d, #9a3412),
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.08) 0, rgba(255, 255, 255, 0.08) 1px, transparent 1px, transparent 9px);
+}
+
+.project-visual-database {
+  background-image:
+    linear-gradient(135deg, #0c4a6e, #166534),
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.07) 0, rgba(255, 255, 255, 0.07) 1px, transparent 1px, transparent 10px);
+}
+
+.project-visual-autograder {
+  background-image:
+    linear-gradient(135deg, #78350f, #991b1b),
+    repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.06) 0, rgba(255, 255, 255, 0.06) 1px, transparent 1px, transparent 12px);
+}
+
+.project-visual-public-tasks {
+  background-image:
+    linear-gradient(135deg, #0c4a6e, #0f766e),
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.07) 0, rgba(255, 255, 255, 0.07) 1px, transparent 1px, transparent 14px);
+}
+
+.project-visual-personal-site {
+  background-image:
+    linear-gradient(135deg, #292524, #44403c),
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.06) 0, rgba(255, 255, 255, 0.06) 1px, transparent 1px, transparent 12px);
+}
+
+.project-visual-user-input {
+  background-image:
+    linear-gradient(135deg, #7f1d1d, #9a3412),
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.08) 0, rgba(255, 255, 255, 0.08) 1px, transparent 1px, transparent 9px);
+}
+
+.project-visual-codon {
+  background-image:
+    linear-gradient(135deg, #831843, #4c1d95),
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.08) 0, rgba(255, 255, 255, 0.08) 1px, transparent 1px, transparent 11px);
 }
 
 .project-full-header {
@@ -529,6 +662,12 @@ a {
   align-items: flex-start;
   gap: 16px;
   margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.project-link-group {
+  display: flex;
+  gap: 16px;
   flex-wrap: wrap;
 }
 
@@ -645,57 +784,6 @@ a {
 
 .blog-read-more:hover {
   color: var(--color-accent-hover);
-}
-
-/* Newsletter */
-.newsletter-section {
-  border-bottom: none;
-}
-
-.newsletter-box {
-  background-color: var(--color-bg-alt);
-  border: 1px solid var(--color-border);
-  border-radius: 16px;
-  padding: 40px;
-  text-align: center;
-}
-
-.newsletter-title {
-  font-family: var(--font-serif);
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: var(--color-text-dark);
-  margin-bottom: 8px;
-}
-
-.newsletter-description {
-  color: var(--color-text-muted);
-  margin-bottom: 24px;
-}
-
-.newsletter-form {
-  display: flex;
-  gap: 12px;
-  max-width: 400px;
-  margin: 0 auto;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.newsletter-input {
-  flex: 1;
-  min-width: 200px;
-  padding: 12px 16px;
-  font-size: 0.95rem;
-  border: 1px solid var(--color-border);
-  border-radius: 8px;
-  background-color: var(--color-bg);
-  color: var(--color-text-dark);
-}
-
-.newsletter-input:focus {
-  outline: none;
-  border-color: var(--color-accent);
 }
 
 /* Footer */
@@ -952,10 +1040,6 @@ a {
     gap: 20px;
   }
 
-  .newsletter-box {
-    padding: 24px;
-  }
-  
   .hero-intro {
     flex-direction: column;
     text-align: center;
