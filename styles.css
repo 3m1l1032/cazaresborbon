@@ -79,6 +79,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 
 .logo {
@@ -91,6 +92,64 @@ a {
 .nav {
   display: flex;
   gap: 32px;
+}
+
+.nav-desktop {
+  display: flex;
+}
+
+.mobile-nav {
+  display: none;
+  align-items: center;
+}
+
+.mobile-nav > summary {
+  list-style: none;
+}
+
+.mobile-nav > summary::-webkit-details-marker {
+  display: none;
+}
+
+.menu-toggle {
+  display: none;
+  position: relative;
+  font-size: 0;
+  color: transparent;
+  border: 1px solid var(--color-border);
+  background-color: var(--color-bg-alt);
+  border-radius: 8px;
+  width: 56px;
+  height: 40px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.menu-toggle::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 24px;
+  height: 3px;
+  border-radius: 2px;
+  background-color: var(--color-text-dark);
+  transform: translate(-50%, -50%);
+  box-shadow: 0 -8px 0 var(--color-text-dark), 0 8px 0 var(--color-text-dark);
+}
+
+.menu-toggle:hover {
+  background-color: var(--color-border);
+}
+
+@media (min-width: 761px) {
+  .nav-desktop {
+    display: flex;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
 }
 
 .nav-link {
@@ -1074,6 +1133,64 @@ a {
   color: var(--color-text-dark);
 }
 
+@media (max-width: 760px) {
+  .nav-desktop {
+    display: none;
+  }
+
+  .logo {
+    font-size: 1rem;
+    max-width: calc(100% - 84px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+
+  .mobile-nav .nav-mobile {
+    position: absolute;
+    top: calc(var(--header-height) - 1px);
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    background-color: rgba(250, 250, 249, 0.98);
+    backdrop-filter: blur(8px);
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+    padding: 8px 24px;
+  }
+
+  .mobile-nav:not([open]) > .nav-mobile {
+    display: none;
+  }
+
+  .mobile-nav[open] > .nav-mobile {
+    display: flex;
+  }
+
+  .mobile-nav .nav-link {
+    display: block;
+    padding: 12px 0;
+  }
+
+  .mobile-nav .nav-link.active::after {
+    bottom: 8px;
+    left: 0;
+    right: auto;
+    width: 24px;
+  }
+}
+
 /* Responsive */
 @media (max-width: 600px) {
   .hero {
@@ -1082,10 +1199,6 @@ a {
 
   .section {
     padding: 48px 0;
-  }
-
-  .nav {
-    gap: 20px;
   }
 
   .hero-intro {
