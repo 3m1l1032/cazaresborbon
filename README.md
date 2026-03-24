@@ -8,10 +8,10 @@ Personal website built with static HTML and CSS.
 /
 ├── CNAME                    # Custom domain for GitHub Pages
 ├── README.md                # Project documentation
+├── index.html               # Home / About / Experience
 ├── styles.css               # Shared styles used by all pages
 ├── images/                  # Site images and media
 ├── pages/
-│   ├── index.html           # Home / About / Experience
 │   ├── projects.html        # Projects page
 │   └── blog.html            # Blog listing page
 └── posts/
@@ -20,7 +20,7 @@ Personal website built with static HTML and CSS.
 
 ## Local Preview
 
-1. Open [pages/index.html](pages/index.html) in your browser.
+1. Open [index.html](index.html) in your browser.
 2. Navigate through the site using the top navigation.
 
 Optional (recommended) local server from the repo root:
@@ -29,7 +29,7 @@ Optional (recommended) local server from the repo root:
 python3 -m http.server 8000
 ```
 
-Then open `http://localhost:8000/pages/index.html`.
+Then open `http://localhost:8000/index.html`.
 
 ## Content Updates
 
@@ -48,7 +48,7 @@ Then open `http://localhost:8000/pages/index.html`.
 
 ### Add or Edit Experience
 
-1. Open [pages/index.html](pages/index.html).
+1. Open [index.html](index.html).
 2. Find the `<div class="timeline">` section.
 3. Copy an existing `<article class="timeline-item">` block.
 4. Update date, role, organization, and description.
@@ -56,7 +56,7 @@ Then open `http://localhost:8000/pages/index.html`.
 
 ### Update Profile Photo
 
-1. Open [pages/index.html](pages/index.html).
+1. Open [index.html](index.html).
 2. Find the `<img class="hero-photo">` element.
 3. Update the `src` path to your new image in [images](images).
 
